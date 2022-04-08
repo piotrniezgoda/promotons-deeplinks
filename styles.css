@@ -47,11 +47,6 @@ html {
     line-height: 2em;
 }
 
-ul:hover li:not(:hover) { 
-    opacity: .5;
-    box-shadow: none;
-}
-
 .list-item input[type=checkbox] {
     position: absolute;
     top: 25%;
@@ -80,4 +75,11 @@ ul:hover li:not(:hover) {
 
 .deeplink-description {
     margin: .6em 0;
+}
+
+@media (min-width: 768px) {
+    ul:hover li:not(:hover) { 
+        opacity: .5;
+        box-shadow: none;
+    }
 }
