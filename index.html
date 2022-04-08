@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>deeplinks</title>
+</head>
+<body>
+    <h1 class="page-title">deeplinki do aplikacji mobilnej</h1>
+    <section class="section">
+        <h2 class="section-title">nowe deeplinki</h2>
+        <ul class="deeplinks-list">
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://whatsnew</h3>
+                <p class="deeplink-description">Przejście na widok "Co nowego"</p>
+                <span class="line"></span>
+                <a href="promotons://whatsnew">promotons://whatsnew</a>
+                <input type="checkbox"  />
+            </li>
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://offers</h3>
+                <p class="deeplink-description">Przejście na widok "Okazje"</p>
+                <span class="line"></span>
+                <a href="promotons://offers">promotons://offers</a>
+                <input type="checkbox"  />
+            </li>
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://retailers</h3>
+                <p class="deeplink-description">Przejście na widok "Sklepy"</p>
+                <span class="line"></span>
+                <a href="promotons://retailers">promotons://retailers</a>
+                <input type="checkbox"  />
+            </li>
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://favorites</h3>
+                <p class="deeplink-description">Przejście na widok "Ulubione"</p>
+                <span class="line"></span>
+                <a href="promotons://favorites">promotons://favorites</a>
+                <input type="checkbox"  />
+            </li>
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://favorites/choose</h3>
+                <p class="deeplink-description">Przejście na widok wyboru ulubionych retailerów</p>
+                <span class="line"></span>
+                <a href="promotons://favorites/choose">promotons://favorites/choose</a>
+                <input type="checkbox"  />
+            </li>
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://favorites/add/{id}</h3>
+                <p class="deeplink-description">Dodanie retailera do ulubionych</p>
+                <span class="line"></span>
+                <a href="promotons://favorites/add/7e618883-42ae-4235-ad6d-122f55755d5b">promotons://favorites/add/7e618883-42ae-4235-ad6d-122f55755d5b</a>
+                <input type="checkbox"  />
+            </li>
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://shoppinglist</h3>
+                <p class="deeplink-description">Przejście do widoku list zakupów</p>
+                <span class="line"></span>
+                <a href="promotons://shoppinglist">promotons://shoppinglist</a>
+                <input type="checkbox"  />
+            </li>
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://shoppinglist/new/{{nazwa}}</h3>
+                <p class="deeplink-description">Tworzy nową listę zakupów bez itemów o nazwie "Lista zakupów {index}</p>
+                <span class="line"></span>
+                <a href="promotons://shoppinglist/new/{{nazwa}}">promotons://shoppinglist/new/{{nazwa}}</a>
+                <input type="checkbox"  />
+            </li>
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://shoppinglist/new/product/add/{id},{id},{id}</h3>
+                <p class="deeplink-description">Tworzy nową listę z itemami o nazwie "Lista zakupów {index}</p>
+                <span class="line"></span>
+                <a href="promotons://shoppinglist/new/product/add/ee373e21-5f0e-4232-9f00-df762170a661,78e466c4-094b-481c-9188-0ce9b6712447,f0ff6b8a-1ee7-46bd-80d7-f369b8797d25">promotons://shoppinglist/new/product/add/ee373e21-5f0e-4232-9f00-df762170a661,78e466c4-094b-481c-9188-0ce9b6712447,f0ff6b8a-1ee7-46bd-80d7-f369b8797d25</a>
+                <input type="checkbox"  />
+            </li>
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://shoppinglist/new/name/{{Moja customowa lista zakupów}}</h3>
+                <p class="deeplink-description">Tworzy nową listę bez itemów o customowej nazwie</p>
+                <span class="line"></span>
+                <a href="promotons://shoppinglist/new/name/przykładowa nazwa">promotons://shoppinglist/new/name/przykładowa nazwa</a>
+                <input type="checkbox"  />
+            </li>
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://shoppinglist/new/name/customowa nazwa listy/product/add/{id}{id}{id}</h3>
+                <p class="deeplink-description">Tworzy nową listę zakupów z customowa nazwa i produktami</p>
+                <span class="line"></span>
+                <a href="promotons://shoppinglist/new/name/customowa nazwa listy/product/add/ee373e21-5f0e-4232-9f00-df762170a661,78e466c4-094b-481c-9188-0ce9b6712447,f0ff6b8a-1ee7-46bd-80d7-f369b8797d25">promotons://shoppinglist/new/name/customowa nazwa listy/product/add/ee373e21-5f0e-4232-9f00-df762170a661,78e466c4-094b-481c-9188-0ce9b6712447,f0ff6b8a-1ee7-46bd-80d7-f369b8797d25</a>
+                <input type="checkbox"  />
+            </li>
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://shoppinglist/last/product/add/{id}</h3>
+                <p class="deeplink-description">Dodaje produkt do ostatnio używanej listy zakupów</p>
+                <span class="line"></span>
+                <a href="promotons://shoppinglist/last/product/add/ee373e21-5f0e-4232-9f00-df762170a661">promotons://shoppinglist/last/product/add/ee373e21-5f0e-4232-9f00-df762170a661</a>
+                <input type="checkbox"  />
+            </li>
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://shoppinglist/product/add/{id}</h3>
+                <p class="deeplink-description">otwiera okienko z możliwością wybrania do której listy dodać produkt</p>
+                <span class="line"></span>
+                <a href="promotons://shoppinglist/product/add/58663e0b-d62b-42e1-81b3-1531b789fbcb">promotons://shoppinglist/product/add/58663e0b-d62b-42e1-81b3-1531b789fbcb</a>
+                <input type="checkbox"  />
+            </li>
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://product/{id}</h3>
+                <p class="deeplink-description">Otwiera widok produktu</p>
+                <span class="line"></span>
+                <a href="promotons://product/58663e0b-d62b-42e1-81b3-1531b789fbcb">promotons://product/58663e0b-d62b-42e1-81b3-1531b789fbcb</a>
+                <input type="checkbox"  />
+            </li>
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://retailer/{id}</h3>
+                <p class="deeplink-description">Otwiera widok retailera (po Id)</p>
+                <span class="line"></span>
+                <a href="promotons://retailer/67331532-81bb-41ef-be67-44bc5120af72">promotons://retailer/67331532-81bb-41ef-be67-44bc5120af72</a>
+                <input type="checkbox"  />
+            </li>
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://retailer/{slug}</h3>
+                <p class="deeplink-description">Otwiera widok retailera (po slugu)</p>
+                <span class="line"></span>
+                <a href="promotons://retailer/lidl">promotons://retailer/lidl</a>
+                <input type="checkbox"  />
+            </li>
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://leaflet/{id}</h3>
+                <p class="deeplink-description">Otwiera gazetkę</p>
+                <span class="line"></span>
+                <a href="promotons://leaflet/60286d9e-62a9-4c6c-b423-312b64e0119e">promotons://leaflet/60286d9e-62a9-4c6c-b423-312b64e0119e</a>
+                <input type="checkbox"  />
+            </li>
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://leaflet/page/{newspaperId}/{pageId}</h3>
+                <p class="deeplink-description">Otwiera konkretną stronę gazetki</p>
+                <span class="line"></span>
+                <a href="promotons://leaflet/page/60286d9e-62a9-4c6c-b423-312b64e0119e/2ad6648d-d775-4bd5-8409-ff648160de22">promotons://leaflet/page/60286d9e-62a9-4c6c-b423-312b64e0119e/2ad6648d-d775-4bd5-8409-ff648160de22</a>
+                <input type="checkbox"  />
+            </li>
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://search</h3>
+                <p class="deeplink-description">Otwiera wyszukiwarkę</p>
+                <span class="line"></span>
+                <a href="promotons://search">promotons://search</a>
+                <input type="checkbox"  />
+            </li>
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://search/{tag}</h3>
+                <p class="deeplink-description">Otwiera wyszukiwarkę i wpisuje tag</p>
+                <span class="line"></span>
+                <a href="promotons://search/sok">promotons://search/sok</a>
+                <input type="checkbox"  />
+            </li>
+        </ul>
+    </section>
+    <section class="section">
+        <h2 class="section-title">dodane poprzednio deeplinki</h2>
+        <ul class="deeplinks-list">
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://shoppinglists</h3>
+                <p class="deeplink-description">Przejście na widok List zakupów, różnica tego deeplinku i nowego to jedna literka</p>
+                <span class="line"></span>
+                <a href="promotons://shoppinglists">promotons://shoppinglists</a>
+                <input type="checkbox"  />
+            </li>
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://new_shoppinglist</h3>
+                <p class="deeplink-description">Utworzenie nowej listy zakupów bez itemów z nazwą "Lista zakupów {{indeks}}"</p>
+                <span class="line"></span>
+                <a href="promotons://new_shoppinglist">promotons://new_shoppinglist</a>
+                <input type="checkbox"  />
+            </li>
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://new_shoppinglist/products/{{id}},{{id}},{{id}}</h3>
+                <p class="deeplink-description">Utworzenie nowej listy zakupów z itemami z nazwą "Lista zakupów {{indeks}}"</p>
+                <span class="line"></span>
+                <a href="promotons://new_shoppinglist/products/ee373e21-5f0e-4232-9f00-df762170a661,78e466c4-094b-481c-9188-0ce9b6712447,f0ff6b8a-1ee7-46bd-80d7-f369b8797d25">promotons://new_shoppinglist/products/ee373e21-5f0e-4232-9f00-df762170a661,78e466c4-094b-481c-9188-0ce9b6712447,f0ff6b8a-1ee7-46bd-80d7-f369b8797d25</a>
+                <input type="checkbox"  />
+            </li>
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://new_shoppinglist/name/Moja customowa lista zakupów</h3>
+                <p class="deeplink-description">Utworzenie nowej listy zakupów z customową nazwą {{...}} bez produktów</p>
+                <span class="line"></span>
+                <a href="promotons://new_shoppinglist/name/Moja customowa lista zakupów">promotons://new_shoppinglist/name/Moja customowa lista zakupów</a>
+                <input type="checkbox"  />
+            </li>
+            <li class="list-item">
+                <h3 class="deeplink-title">promotons://new_shoppinglist/name/Moja customowa lista/{{id}},{{id}},{{id}}</h3>
+                <p class="deeplink-description">Utworzenie nowej listy zakupów z customową nazwą oraz produktami</p>
+                <span class="line"></span>
+                <a href="promotons://new_shoppinglist/name/Moja customowa lista/ee373e21-5f0e-4232-9f00-df762170a661,78e466c4-094b-481c-9188-0ce9b6712447,f0ff6b8a-1ee7-46bd-80d7-f369b8797d25">promotons://new_shoppinglist/name/Moja customowa lista/ee373e21-5f0e-4232-9f00-df762170a661,78e466c4-094b-481c-9188-0ce9b6712447,f0ff6b8a-1ee7-46bd-80d7-f369b8797d25</a>
+                <input type="checkbox"  />
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
+
+<script>
+</script>
